@@ -132,10 +132,10 @@
 	if (preloader) {
 		window.addEventListener('load', () => {
 			preloader.remove()
-			setTimeout(function () {
-				// This hides the address bar:
-				window.scrollTo(0, 1);
-			}, 0);
+			// setTimeout(function () {
+			// 	// This hides the address bar:
+			// 	window.scrollTo(0, 1);
+			// }, 0);
 		});
 	}
 
