@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .handwriting1 {
+        font-family: "Pacifico", cursive;
+        /* color: white; */
+    }
+    .handwriting2 {
+        font-family: "Permanent Marker", cursive;
+        /* color: white; */
+    }
+    .handwriting3 {
+        font-family: "Playpen Sans", cursive;
+        /* color: white; */
+    }
+}
+
+html {
+    background-image: url("/bg-gradient.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-position-x: center;
+}
+
+body {
+    background-image: radial-gradient(
+        circle at 2px 2px,
+        rgba(200, 200, 200, 0.5) 1.4px,
+        transparent 0
+    );
+    background-size: 40px 40px;
+    /* cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>")
+            16 0,
+        auto;  */
+}
+
+.spectrum-background {
+    background: linear-gradient(150deg, #ecedee, transparent 30%),
+        linear-gradient(330deg, rgb(210, 206, 242), transparent 30%),
+        linear-gradient(225deg, #fff0be, #fbdce7, #e2fae1, powderblue);
+}
+
+.gradient-text {
+    background: linear-gradient(150deg, #c33333, transparent 50%),
+        linear-gradient(330deg, rgb(96, 83, 201), transparent 100%),
+        linear-gradient(225deg, #fff0be, #fbdce7, #e2fae1, transparent 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-text-1 {
+    background: linear-gradient(150deg, #007fff, transparent 50%),
+        linear-gradient(330deg, rgb(96, 83, 201), transparent 100%),
+        linear-gradient(225deg, #d0a30f, #fbdce7, #e2fae1, transparent 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

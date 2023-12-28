@@ -1,0 +1,31 @@
+Add this to tailwindConfig.js
+module.exports new key
+
+daisyui: {
+    themes: [
+        {
+            mytheme: {
+
+                "primary": "#ff006d",
+
+                "secondary": "#9a5500",
+
+                "accent": "#00c5e9",
+
+                "neutral": "#2a1e1a",
+
+                "base-100": "#2b2425",
+
+                "info": "#00c7ff",
+
+                "success": "#00b160",
+
+                "warning": "#b26e00",
+
+                "error": "#ff698f",
+            },
+        },
+    ],
+  },
+
+

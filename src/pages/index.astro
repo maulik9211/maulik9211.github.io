@@ -1,0 +1,126 @@
+---
+import { Image } from "astro:assets";
+import { motion } from "framer-motion";
+import { FaGithub, FaNode, FaReact } from "react-icons/fa";
+import ProjectCards from "../components/ProjectCards";
+import Services from "../components/Services";
+// import localMaulikImage from "../images/Subject 2_CROP.png";
+import { SiMongodb, SiMysql } from "react-icons/si";
+import localMaulikImage from "../images/Subject 9.png";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const ICON_SIZE = 40;
+const ICON_COLOR = `rgb(100 116 139)`;
+---
+
+<BaseLayout title="Maulik's Portfolio">
+    <div class="navbar bg-transparent">
+        <div class="flex-1">
+            <a
+                class="btn btn-ghost text-xl font-bold capitalize gradient-text-1"
+                href="https://maulik9211.github.io">Maulik J.</a
+            >
+        </div>
+        <div class="flex-none">
+            <a
+                class="btn btn-ghost text-3xl"
+                target="_blank"
+                href="https://twitter.com/moliculeX"
+            >
+                𝕏
+            </a>
+
+            <a
+                class="btn btn-ghost"
+                target="_blank"
+                href="https://github.com/maulik9211"
+            >
+                <FaGithub size={30} color={"#777"} />
+            </a>
+        </div>
+    </div>
+
+    <section class="hero min-h-screen -mt-20 md:-mt-10">
+        <div class="hero-content flex-col lg:flex-row">
+            <motion.div
+                animate={["initial", "rotate"]}
+                variants={{
+                    grow: {
+                        scale: 1.1,
+                    },
+                    rotate: {
+                        rotate: [null, -5, 5, 0],
+                        transition: {
+                            delay: 0.5,
+                            duration: 10,
+                            repeat: 100,
+                            repeatDelay: 0.2,
+                            repeatType: "mirror",
+                        },
+                    },
+                    initial: {
+                        y: [-10, 10],
+                        rotate: 0,
+                        transition: {
+                            delay: 0.5,
+                            duration: 2,
+                            repeat: 100,
+                            repeatDelay: 0.2,
+                            repeatType: "mirror",
+                        },
+                    },
+                }}
+                client:load
+            >
+                <div
+                    class="w-60 md:w-72 bg-amber-500 m-10 rounded-3xl glass opacity-90"
+                    style="border-radius: 60px"
+                >
+                    <Image
+                        src={localMaulikImage}
+                        alt="Maulik Jadav"
+                        class="w-56 md:w-64 mx-auto pt-10 opacity-90"
+                        style="border-radius: 50px"
+                    />
+                </div>
+            </motion.div>
+
+            <div class="gradient-bg-image">
+                <h1
+                    class="text-3xl sm:text-4xl xl:text-5xl font-bold gradient-text text-center"
+                >
+                    Creative. Independent. Developer.
+                </h1>
+                <p
+                    class="text-md sm:text-lg xl:text-xl py-6 font-semibold text-center px-14"
+                >
+                    Hi, I am a freelancer. I develop full-stack software
+                    systems.
+                </p>
+                <div class="mt-5 flex row-auto gap-7 justify-center">
+                    <FaReact size={ICON_SIZE} color={ICON_COLOR} />
+                    <FaNode size={ICON_SIZE} color={ICON_COLOR} />
+                    <SiMysql size={ICON_SIZE} color={ICON_COLOR} />
+                    <SiMongodb size={ICON_SIZE} color={ICON_COLOR} />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-10">
+        <h1
+            class="text-2xl sm:text-2xl xl:text-3xl font-bold text-center text-slate-500"
+        >
+            Services
+        </h1>
+        <Services client:visible />
+    </section>
+
+    <section class="min-h-screen mt-16 p-10">
+        <h1
+            class="text-2xl sm:text-2xl xl:text-3xl font-bold text-center text-slate-500"
+        >
+            Portfolio
+        </h1>
+        <ProjectCards client:visible />
+    </section>
+</BaseLayout>
