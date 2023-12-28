@@ -90,7 +90,7 @@ export default function ProjectCards() {
             id: 4, title: "StageWise", subtitle: "Wholesome business management software solution for MSMEs.",
             imageExtraClasses: "p-0 -mt-5",
             renderImage: (extraClasses) => <img
-                src={"/images/projects/StageWise main.png"}
+                src={"/images/projects/StageWise main Large.png"}
                 alt={"Agrain brand logo"}
                 className={"pt-5 max-h-20 mx-auto " + extraClasses}
             />,
