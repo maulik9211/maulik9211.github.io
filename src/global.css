@@ -23,6 +23,9 @@ html {
     /* background-size: cover; */
     /* background-attachment: fixed; */
     background-position-x: center;
+
+    font-family: "figtree";
+    scroll-behavior: smooth;
 }
 
 body {

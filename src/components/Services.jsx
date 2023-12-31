@@ -16,7 +16,7 @@ export default function Services() {
         <div className="card-compact rounded-2xl sm:card-normal bg-base-100 shadow-2xl">
 
             <div className="card-body">
-                <h5 className="text-xl font-semibold text-center">Fronend Development</h5>
+                <h5 className="text-xl font-semibold text-center">Frontend Development</h5>
                 <p className="text-xs mb-4  text-center">For Web And Mobile Platforms</p>
                 <table class="table">
                     <tbody>
