@@ -1,11 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import { motion } from "framer-motion";
-import { FaGithub, FaNode, FaReact } from "react-icons/fa";
+import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import ProjectCards from "../components/ProjectCards";
 import Services from "../components/Services";
 // import localMaulikImage from "../images/Subject 2_CROP.png";
-import { SiMongodb, SiMysql } from "react-icons/si";
+import { SiMongodb, SiMysql, SiSmartthings } from "react-icons/si";
 import localMaulikImage from "../images/Subject 9 Medium.png";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const ICON_SIZE = 40;
@@ -98,9 +98,10 @@ const ICON_COLOR = `rgb(100 116 139)`;
                 </p>
                 <div class="mt-5 flex row-auto gap-7 justify-center">
                     <FaReact size={ICON_SIZE} color={ICON_COLOR} />
-                    <FaNode size={ICON_SIZE} color={ICON_COLOR} />
+                    <FaNodeJs size={ICON_SIZE} color={ICON_COLOR} />
                     <SiMysql size={ICON_SIZE} color={ICON_COLOR} />
                     <SiMongodb size={ICON_SIZE} color={ICON_COLOR} />
+                    <SiSmartthings size={ICON_SIZE} color={ICON_COLOR} />
                 </div>
             </div>
         </div>
