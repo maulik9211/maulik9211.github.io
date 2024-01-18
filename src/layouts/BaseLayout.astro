@@ -9,7 +9,16 @@ const { title } = Astro.props;
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>{title}</title>
+
+        <title>{title || "Maulik's Portfolio"}</title>
+        <meta
+            name="description"
+            content="I am Maulik. Welcome to my portfolio website. Here I showcase my skills and projects that I have worked on. Contact me for freelance projects and collaborations."
+        />
+        <meta
+            name="keywords"
+            content="maulik, maulik jadav, freelancer, maulik software, maulik freelancer, maulik developer, maulik dev, mj, maulik j, maulik ahmedabad"
+        />
 
         <link
             rel="apple-touch-icon"
