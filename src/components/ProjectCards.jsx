@@ -51,6 +51,7 @@ export default function ProjectCards() {
                 <li className="list-item">Among many, my primary responsibilities included report generation with securely
                     saving employee documents and retrieval of the same.</li>
                 <li className="list-item">It was my first experience of working on a phase 2 of any project. The project already had a base structure and flow</li>
+                <li className="list-item">Project Live. But No access to the demo because it's organizations internal project.</li>
             </ul>
 
         },
@@ -63,48 +64,79 @@ export default function ProjectCards() {
                 alt={"Agrain brand logo"}
                 className={"p-5 max-h-20 mx-auto " + extraClasses}
             />,
+            renderTechStack: () => <div className="row-auto">
+                <div className="badge-ghost badge p-3 m-1">React Native</div>
+                <div className="badge-ghost badge p-3 m-1">EMQX MQTT</div>
+                <div className="badge-ghost badge p-3 m-1">Node.js</div>
+                <div className="badge-ghost badge p-3 m-1">Influx DB</div>
+                <div className="badge-ghost badge p-3 m-1">MySQL</div>
+            </div>,
+            renderDescription: () => <ul className="list-disc p-2 ml-3">
+                <li className="list-item">
+                    IoT Dashboard for Rain Gauging Sensors
+                </li>
+                <li className="list-item">Architected the whole software stack from data collection to optimal storage and querying.</li>
+                <li className="list-item">Communication with hardware team which developed this IoT Based sensors.</li>
+                <li className="list-item">State, District wise data collection and querying to plot it on the map.</li>
+                <li className="list-item">Waiting for approval from Haryana Government, After which project will be live.</li>
+            </ul>,
             renderChips: () => <motion.div className="grid grid-flow-dense">
                 <Chip
                     icon={<BsPersonWorkspace size={20} color={"#777"} />}
-                    label={"Lead Developer"}
+                    label={"Full Stack Developer"}
                 />
             </motion.div>
         },
 
         {
-            id: 5, title: "Devyami IoT App", subtitle: "Internet Of Things App that allows to control and monitor pumps.",
+            id: 5, title: "Devyami IoT App", subtitle: "Internet Of Things App that allows to control and monitor water related systems.",
             imageExtraClasses: "h-16 p-0 -mt-6",
             renderImage: (extraClasses) => <img
                 src={"/images/projects/DevyamiLogo512.png"}
                 alt={"Agrain brand logo"}
-                className={"pt-5 max-h-24 mx-auto " + extraClasses}
+                className={"pt-5 pb-2 max-h-24 mx-auto " + extraClasses}
             />,
+            renderTechStack: () => <div className="row-auto">
+                <div className="badge-ghost badge p-3 m-1">React Native</div>
+                <div className="badge-ghost badge p-3 m-1">AWS IoT</div>
+                <div className="badge-ghost badge p-3 m-1">Node.js</div>
+                <div className="badge-ghost badge p-3 m-1">Influx DB</div>
+                <div className="badge-ghost badge p-3 m-1">MySQL</div>
+                <div className="badge-ghost badge p-3 m-1">AWS Amplify + Cognito</div>
+            </div>,
+            renderDescription: () => <ul className="list-disc p-2 ml-3">
+                <li className="list-item">Architected the whole software stack from data collection to optimal storage and querying.</li>
+                <li className="list-item">Communication with hardware team which developed this IoT controllers and panels.</li>
+                <li className="list-item">Includes range of devices like pumps, purifiers, heaters, water cooloers, Air conditioners... & provisions for future additions.</li>
+                <li className="list-item "><a className="text-blue-600 underline" href="https://apps.apple.com/in/app/devyami-smart/id6738882745" target="_blank">Live on App Store</a></li>
+                <li className="list-item "><a className="text-blue-600 underline" href="https://play.google.com/store/apps/details?id=com.devyami.apconapp" target="_blank">Live on Play Store</a></li>
+            </ul>,
             renderChips: () => <motion.div className="grid grid-flow-dense gap-2">
                 <Chip
                     icon={<BsPersonWorkspace size={20} color={"#777"} />}
-                    label={"App Developer"}
+                    label={"Full Stack Developer"}
                 />
             </motion.div>
         },
-        {
-            id: 4, title: "StageWise", subtitle: "Wholesome business management software solution for MSMEs.",
-            imageExtraClasses: "p-0 -mt-5",
-            renderImage: (extraClasses) => <img
-                src={"/images/projects/StageWise main Large.png"}
-                alt={"Agrain brand logo"}
-                className={"pt-5 max-h-20 mx-auto " + extraClasses}
-            />,
-            renderChips: () => <motion.div className="grid grid-flow-dense gap-2">
-                <Chip
-                    icon={<BsPersonWorkspace size={20} color={"#777"} />}
-                    label={"Primary Developer"}
-                />
-                {/* <Chip
-                    icon={<GiSupersonicArrow size={20} color={"#777"} />}
-                    label={"Co-founder"}
-                /> */}
-            </motion.div>
-        },
+        // {
+        //     id: 4, title: "StageWise", subtitle: "Wholesome business management software solution for MSMEs.",
+        //     imageExtraClasses: "p-0 -mt-5",
+        //     renderImage: (extraClasses) => <img
+        //         src={"/images/projects/StageWise main Large.png"}
+        //         alt={"Agrain brand logo"}
+        //         className={"pt-5 max-h-20 mx-auto " + extraClasses}
+        //     />,
+        //     renderChips: () => <motion.div className="grid grid-flow-dense gap-2">
+        //         <Chip
+        //             icon={<BsPersonWorkspace size={20} color={"#777"} />}
+        //             label={"Primary Developer"}
+        //         />
+        //         {/* <Chip
+        //             icon={<GiSupersonicArrow size={20} color={"#777"} />}
+        //             label={"Co-founder"}
+        //         /> */}
+        //     </motion.div>
+        // },
         {
             id: 2, title: "Aikyam App",
             subtitle: "Smart Home app with Automations, schedules and more",
@@ -114,10 +146,58 @@ export default function ProjectCards() {
                 alt={"Vardhmaan brand logo"}
                 className={"p-5 max-h-20 mx-auto " + extraClasses}
             />,
+            renderTechStack: () => <div className="row-auto">
+                <div className="badge-ghost badge p-3 m-1">React Native</div>
+                <div className="badge-ghost badge p-3 m-1">AWS IoT</div>
+                <div className="badge-ghost badge p-3 m-1">Node.js</div>
+                <div className="badge-ghost badge p-3 m-1">MySQL</div>
+                <div className="badge-ghost badge p-3 m-1">Dynamo DB</div>
+            </div>,
+            renderDescription: () => <ul className="list-disc p-2 ml-3">
+                <li className="list-item">Automations triggered from cloud by monitoring sensor values sent by the IoT Devices.</li>
+                <li className="list-item">Schedules activated from cloud on Lamda + Dynamo DB for minute level triggers. (Optimal and scalable setup. Tested)</li>
+                <li className="list-item">Architected the whole software stack from data collection to optimal storage and querying.</li>
+                <li className="list-item">Communication with hardware team which developed this IoT Based sensors.</li>
+                <li className="list-item "><a className="text-blue-600 underline" href="https://aikyamhome.in" target="_blank">Website  </a></li>
+                <li className="list-item "><a className="text-blue-600 underline" href="https://aikyamhome.in/img/dist/brochure-app.webp" target="_blank">App Screen Shots</a></li>
+                <li className="list-item">App store & Play store distribution pending.</li>
+            </ul>,
             renderChips: () => <motion.div className="grid grid-flow-dense gap-2">
                 <Chip
                     icon={<RiTeamFill size={20} color={"#777"} />}
                     label={"Head of Software & Cloud"}
+                />
+                {/* <Chip
+                    icon={<GiSupersonicArrow size={20} color={"#777"} />}
+                    label={"Co-founder"}
+                /> */}
+            </motion.div>
+        },
+        {
+            id: 6, title: "Myosa Website",
+            subtitle: "MYOSA (Make Your Own Sensors Applications) Website and Documentation site.",
+            imageExtraClasses: "h-10 p-0 md:-mt-3",
+            renderImage: (extraClasses) => <img
+                src={"/images/projects/MYOSA-black.png"}
+                alt={"Vardhmaan brand logo"}
+                className={"p-5 max-h-20 mx-auto " + extraClasses}
+            />,
+            renderTechStack: () => <div className="row-auto">
+                <div className="badge-ghost badge p-3 m-1">Astro</div>
+                <div className="badge-ghost badge p-3 m-1">Tailwind CSS</div>
+                <div className="badge-ghost badge p-3 m-1">Docusaurus</div>
+            </div>,
+            renderDescription: () => <ul className="list-disc p-2 ml-3">
+                <li className="list-item">Communication with designers and product owners to understand product and then website creation.</li>
+                <li className="list-item">Hierarchical documentation for beginners and students which are target audience for this product.</li>
+                <li className="list-item "><a className="text-blue-600 underline" href="https://myosa-sensors.org/" target="_blank">Website</a></li>
+                <li className="list-item "><a className="text-blue-600 underline" href="https://wiki.myosa-sensors.org/docs/intro/" target="_blank">Documentation Website</a></li>
+                <li className="list-item font-bold">Up Next: E-Commerce Store.</li>
+            </ul>,
+            renderChips: () => <motion.div className="grid grid-flow-dense gap-2">
+                <Chip
+                    icon={<RiTeamFill size={20} color={"#777"} />}
+                    label={"Developer"}
                 />
                 {/* <Chip
                     icon={<GiSupersonicArrow size={20} color={"#777"} />}
